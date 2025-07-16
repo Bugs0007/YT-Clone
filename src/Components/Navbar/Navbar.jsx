@@ -1,12 +1,12 @@
 import React from "react";
 import "./Navbar.css";
-import menu_icon from "../../Assets/menu.png";
-import logo from "../../Assets/logo.png";
-import search_icon from "../../Assets/search.png";
-import notification_icon from "../../Assets/notification.png";
-import profile_icon from "../../Assets/jack.png";
-import more_icon from "../../Assets/more.png";
-import upload_icon from "../../Assets/upload.png";
+import menu_icon from "../../assets/menu.png";
+import logo from "../../assets/logo.png";
+import search_icon from "../../assets/search.png";
+import notification_icon from "../../assets/notification.png";
+import profile_icon from "../../assets/jack.png";
+import more_icon from "../../assets/more.png";
+import upload_icon from "../../assets/upload.png";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ setSidebar }) => {
