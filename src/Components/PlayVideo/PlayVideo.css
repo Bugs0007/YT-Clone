@@ -1,0 +1,275 @@
+/* Add this to your main video page wrapper */
+
+.video-page-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1600px;
+    margin: 32px auto 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+
+/* Main video section */
+
+.play-video {
+    flex-basis: 69%;
+}
+
+.play-video iframe {
+    width: 100%;
+    height: 37vw;
+}
+
+.play-video h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+    font-family: "Poppins", "Outfit", Arial, sans-serif;
+}
+
+.play-video-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #606060;
+    margin-bottom: 8px;
+    background: #f9f9f9;
+    padding: 12px 18px 12px 18px;
+    border-radius: 8px;
+    border: 1px solid #ececec;
+}
+
+.play-video-info p {
+    margin: 0;
+}
+
+.play-video-info div span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 18px;
+    font-size: 15px;
+    color: #222;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.play-video-info img {
+    width: 20px;
+    height: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 18px 0;
+}
+
+.publisher {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    background: #f9f9f9;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #ececec;
+}
+
+.publisher img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.publisher div p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 2px;
+}
+
+.publisher div p:last-child {
+    font-size: 13px;
+    color: #606060;
+}
+
+.subscribe-btn {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: auto;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.08);
+}
+
+.subscribe-btn:hover {
+    background: #e60000;
+}
+
+.vide-description {
+    margin-top: 10px;
+}
+
+.vide-description p {
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.vide-description h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 18px 0 10px 0;
+    color: #222;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.comment img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 2px 0;
+    color: #222;
+}
+
+.comment h3 span {
+    font-size: 13px;
+    color: #888;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.comment p {
+    font-size: 14px;
+    color: #444;
+    margin: 0 0 6px 0;
+}
+
+.comment-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.comment-action img {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+
+/* Recommended section - filepath: c:\Users\Bhagath\OneDrive\Desktop\yt-clone\src\Components\Recommended\Recommended.css */
+
+.recommended {
+    /* Remove width, min-width, max-width, and margin-left to allow parent and component styles to take effect */
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 1400px) {
+    .video-page-container {
+        flex-direction: column;
+        padding: 0 8px;
+    }
+    .play-video,
+    .recommended {
+        width: 100%;
+        max-width: 100vw;
+        margin: 0;
+    }
+    .recommended {
+        margin-top: 32px;
+        margin-left: 0;
+    }
+    .play-video video {
+        height: 540px;
+        /* 360px + 50% = 540px */
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .play-video {
+        padding: 18px 6vw;
+        max-width: 100vw;
+    }
+    .play-video video {
+        height: 330px;
+        /* 220px + 50% = 330px */
+        max-height: 45vh;
+    }
+    .play-video h3 {
+        font-size: 20px;
+    }
+    .play-video-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .play-video-info div {
+        margin-bottom: 8px;
+    }
+    .publisher {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .publisher img {
+        width: 40px;
+        height: 40px;
+    }
+    .publisher div p:first-child {
+        font-size: 14px;
+    }
+    .publisher div p:last-child {
+        font-size: 12px;
+    }
+    .subscribe-btn {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+    .vide-description h4 {
+        font-size: 14px;
+    }
+    .comment img {
+        width: 32px;
+        height: 32px;
+    }
+    .comment h3 {
+        font-size: 14px;
+    }
+    .comment h3 span {
+        font-size: 12px;
+    }
+    .comment p {
+        font-size: 13px;
+    }
+    .comment-action img {
+        width: 16px;
+        height: 16px;
+    }
+}

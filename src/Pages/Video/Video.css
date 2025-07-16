@@ -1,0 +1,21 @@
+.play-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.play-video {
+    flex: 2 1 0;
+    min-width: 0;
+}
+
+.recommended {
+    flex: 1 1 320px;
+    min-width: 320px;
+    max-width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+}

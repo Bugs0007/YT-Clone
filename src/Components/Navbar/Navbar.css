@@ -1,0 +1,121 @@
+nav {
+    padding: 0 2%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left img {
+    width: 110px;
+    margin-left: 10px;
+}
+
+.nav-left .menu-icon {
+    width: 28px;
+    margin-right: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.nav-left .menu-icon:hover {
+    transform: scale(1.08);
+}
+
+.nav-middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    padding: 0 0 0 16px;
+    border-radius: 24px 0 0 24px;
+    height: 40px;
+    width: 500px;
+    max-width: 90vw;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 8px;
+}
+
+.search-button {
+    width: 50px;
+    height: 40px;
+    background: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    border-left: none;
+    border-radius: 0 24px 24px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.search-button:hover {
+    background: #f1f1f1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.search-button img {
+    width: 20px;
+}
+
+.nav-right img {
+    width: 32px;
+    margin-left: 28px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 50%;
+}
+
+.nav-right img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.user-icon {
+    width: 36px !important;
+    border-radius: 50%;
+    border: 1.5px solid #eee;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 700px) {
+    .nav-middle {
+        display: none;
+    }
+    .nav-right img {
+        margin-left: 14px;
+        width: 24px;
+    }
+    .user-icon {
+        width: 28px !important;
+    }
+}
